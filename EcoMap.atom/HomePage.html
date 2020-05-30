@@ -183,7 +183,7 @@ text-align: center;
 
      .InteractDesc {
      	position: center;
-       top: 60px;
+       top: 80px;
   	padding: 10px;
     height:auto;
    font-family: 'Raleway', sans-serif;
@@ -228,13 +228,41 @@ text-align: center;
     opacity: 1;
   }
   /* Responsive columns - one column layout (vertical) on small screens */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
+  @media screen and (max-width: 770px) {
+    nav a {
+    font-size:10px;
+    padding:10px;
+    }
+    footer a {
+      font-size:10px;
+      padding:10px;
+    }
+  }
+
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 400px) {
+    .logo {
+      height:50px;
+    }
+
+    nav a {
+    font-size:30px;
+    padding:5px;
+    display:block;
+    }
+
+    footer a {
+      font-size:25px;
+      padding:auto;
       display: block;
-      margin-bottom: 20px;
     }
+
     .Headerplanet {
+      text-align:middle;
+    font-size:40px;
     }
+    .InteractDesc {
+  font-size:13px;
+ }
   }
 </style>
