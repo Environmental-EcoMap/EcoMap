@@ -22,11 +22,13 @@
     </nav>
 
 <section>
-<h1 class="Headerplanet">Welcome to EcoMap!</h1>
-         <p class="InteractDesc"><b>Interact with the map below to learn more about various environmental problems in the world and see how you can help!!</b><p>
+  <div class="header">
+<p class="Headerplanet" style="text-align:center;">Welcome to EcoMap!</p>
+         <p class="InteractDesc" style="text-align:center;"><b>Interact with the map below to learn more about various environmental problems in the world and see how you can help!!</b><p>
+</div>
 
 <div class="map">
-  <iframe  src="https://maphub.net/embed/95330?legend=1&panel=1" scrolling="auto" frameborder="1"></iframe>
+  <iframe  class="responsive-iframe" height="100%" width="100%" src="https://maphub.net/embed/95330?legend=1&panel=1" scrolling="auto" frameborder="1"></iframe>
 </div>
 </section>
 
@@ -144,7 +146,7 @@ iframe {
     color:white;
     padding:50px;
     width:auto;
-    height:420px;
+    height:220px;
     font-family: 'Raleway', sans-serif;
     position: relative;
     text-transform: uppercase;
@@ -161,6 +163,16 @@ text-align: center;
   font-size:60px;
   }
 
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
   .section1 {
   	padding: 2px;
     height:auto;
@@ -182,6 +194,10 @@ text-align: center;
     position: center;
     height: auto;
     width: auto;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
   }
 
    footer {
