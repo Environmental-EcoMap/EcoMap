@@ -106,22 +106,24 @@
     padding:20px;
     right:50px;
   }
-.logo {
-	position:relative;
-	border-style: solid;
-  border-color: white;
-  right:650px;
-  height:100px;
-  display:inline-block;
-}
-  nav {
-  	padding:32px;
-    font-family: 'Raleway', sans-serif;
-    text-align: right;
-    word-spacing: 10px;
-    background-color: black;
-    opacity: 1;
-  }
+  .logo {
+ border-style: solid;
+ border-color: white;
+ height:100px;
+ display:inline-block;
+ float:left;
+ }
+ nav {
+ padding:32px;
+   font-family: 'Raleway', sans-serif;
+   text-align: right;
+   word-spacing: 10px;
+   background-color: black;
+   width:auto;
+   opacity: 1;
+   width:auto;
+     height:160px;
+ }
   nav a:hover {
  border-style: solid;
   border-color: #171e3d;
@@ -263,14 +265,15 @@ body {
   display: table;
   clear: both;
 }
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
+/* Style the counter cards */
+.card {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  text-align: center;
+  background-color: #e6e6e6;
+  font-family: 'Raleway', sans-serif;
+color:black;
+  justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -302,17 +305,7 @@ body {
     display: block;
   }
 
-  
+
 }
-}
-/* Style the counter cards */
-.card {
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 40px;
-  text-align: center;
-  background-color: #e6e6e6;
-  font-family: 'Raleway', sans-serif;
-color:black;
-  justify-content: center;
-}
+
 </style>
