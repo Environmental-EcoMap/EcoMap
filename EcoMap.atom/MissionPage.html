@@ -199,26 +199,46 @@ body {
   position:relative;
 }
 
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 767px) {
+  nav a {
+  font-size:10px;
+  padding:10px;
+  }
+  footer a {
+    font-size:12px;
+    padding:10px;
+  text-align:right;
+  }
+}
 
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 400px) {
     .logo {
       height:50px;
     }
-
+nav {
+  height:auto;
+}
     nav a {
     font-size:30px;
     padding:5px;
     display:block;
     }
 
-nav {
-  height:auto;
-}
     footer a {
       font-size:25px;
       padding:auto;
       display: block;
     }
-}
+
+    .Headerplanet {
+      text-align:middle;
+    font-size:40px;
+    }
+
+    .InteractDesc {
+  font-size:13px;
+ }
+  }
 </style>
