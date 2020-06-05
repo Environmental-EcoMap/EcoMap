@@ -300,14 +300,6 @@ body {
  clear: both;
 }
 
-/* Responsive columns */
-@media screen and (max-width: 600px) {
- .column {
-   width: 100%;
-   display: block;
-   margin-bottom: 20px;
- }
-}
 /* Style the counter cards */
 .card {
  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -317,5 +309,66 @@ body {
  font-family: 'Raleway', sans-serif;
 color:black;
  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav a {
+  font-size:10px;
+  padding:10px;
+  }
+  footer a {
+    font-size:12px;
+    padding:40px;
+  text-align:right;
+  }
+}
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  nav a {
+  font-size:20px;
+  padding:5px;
+  display:inline-block;
+  }
+  footer a {
+    font-size:20px;
+    padding:10px;
+  text-align:right;
+  display:inline-block;
+  }
+}
+@media screen and (max-width: 400px) {
+  .logo {
+    height:50px;
+  }
+nav {
+height:auto;
+}
+  nav a {
+  font-size:30px;
+  padding:5px;
+  display:block;
+  }
+
+  footer a {
+    font-size:25px;
+    padding:auto;
+    display: block;
+  }
+
+  .Headerplanet {
+    text-align:middle;
+  font-size:40px;
+  }
+
+  .InteractDesc {
+font-size:13px;
+}
 }
 </style>
