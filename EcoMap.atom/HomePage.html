@@ -44,6 +44,10 @@
 </html>
 
 <style>
+html,body {
+    margin:0;
+    padding:0;
+}
 iframe {
        width: 500px; /* It should not be 100% */
        height: 500px:
@@ -239,7 +243,20 @@ text-align: center;
     text-align:right;
     }
   }
-
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    nav a {
+    font-size:20px;
+    padding:5px;
+    display:inline-block;
+    }
+    footer a {
+      font-size:20px;
+      padding:10px;
+    text-align:right;
+    display:inline-block;
+    }
+  }
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 400px) {
     .logo {
