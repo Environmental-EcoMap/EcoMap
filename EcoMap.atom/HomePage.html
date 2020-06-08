@@ -35,7 +35,7 @@
       <div class="SocialIcons">
 
         <a href="https://twitter.com/theecomap">
-      <img class="Twitter" src="Twitter.jpg">
+      <img class="Twitter" src="Twitter.jpg" target="_blank">
     </a>
 
     <a href="https://www.facebook.com/eco.map.9250">
@@ -228,12 +228,12 @@ text-align: center;
   }
 
    footer {
-  	padding:60px ;
+  	padding:60px;
     font-family: 'Raleway', sans-serif;
     text-align: right;
     background-color:#0f0f0f;
 word-spacing:30px;
-     width:auto;
+     width:100%;
    float: none !important;
    list-style:none;
    text-decoration:none;
@@ -312,11 +312,11 @@ word-spacing:30px;
     padding:10px;
     }
     .FooterInfo {
-      font-size:80px;
-      padding:10px;
+      font-size:200px;
+      padding:2px;
     position:relative;
     bottom:10px;
-    right:40px;
+    right:120px;
     }
     .SocialIcons {
 position:relative;
@@ -335,7 +335,7 @@ left:340px;
       padding:10px;
     position:relative;
     bottom:10px;
-    left:70px;
+    right:40px;
     }
     .SocialIcons {
 position:relative;
@@ -391,14 +391,13 @@ left:180px;
     padding:5px;
     display:block;
     }
-footer {
-  height:300px;
-}
-    .FooterInfo {
-      font-size:2px;
+
+    .FooterInfo a{
+      font-size:13px;
       padding:5px;
       position:relative;
       top:50px;
+    right:10px;
     }
     .SocialIcons {
       left:40px;
@@ -411,11 +410,28 @@ footer {
     .InteractDesc {
   font-size:13px;
  }
+ .map {
+   height:300px;
+ }
   }
 @media screen and (max-width:380px) {
+  footer {
+    height:200px;
+  }
+  .FooterInfo a{
+    font-size:5px;
+    padding:5px;
+    position:relative;
+    top:50px;
+  right:10px;
+  }
   .SocialIcons {
     position:absolute;
+    width:5px;
     left:50px;
+  }
+  .map {
+    height:300px;
   }
 }
 </style>
