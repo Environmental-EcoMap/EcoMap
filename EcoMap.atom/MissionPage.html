@@ -49,9 +49,11 @@
     </a>
     </div>
   <br>
+  <div class="FooterInfo">
       <a href="Credits.html">CREDITS</a>
       <a href="PrivacyPolicy.html">PRIVACY-POLICY</a>
       <a href="Terms-Conditions.html">TERMS-CONDITIONS</a>
+    </div>
     </footer>
 
   </body>
@@ -71,7 +73,7 @@ html,body {
   border-color: white;
     border-width:  1.5px;
   }
-  a {
+  nav a {
   	text-decoration:none;
     color: white;
     font-family: 'Raleway', sans-serif;
@@ -117,7 +119,7 @@ html,body {
     position: relative;
     text-transform: uppercase;
 opacity: 0.9;
-background-attachment: scroll; /* Parallax effect */
+background-attachment: fixed; /* Parallax effect */
  background-position: center;  /* Parallax effect */
  background-repeat: no-repeat;  /* Parallax effect */
  background-size: cover;   /* Parallax effect */
@@ -166,45 +168,48 @@ position: relative;;
     font-size:40px;
    }
 
-   footer {
-    padding:60px ;
-    font-family: 'Raleway', sans-serif;
-    text-align: right;
-    background-color:#0f0f0f;
-     width:auto;
-   float: none !important;
-   list-style:none;
-  }
-  .FooterInfo a {
-    position:relative;
-    text-decoration:none;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-size:20px;
-    padding:20px;
-    right:80px;
-  }
-  .FooterInfo a:hover {
-     border-style: solid;
-  border-color: whited;
-    border-width:  1.5px;
-    background-color:black;
-    color:white;
-    transition-duration: 0.5s;
-    opacity: 1;
-  }
-  .SocialIcons {
-    text-align:left;
-    width:auto;
-    text-decoration:none;
-    position:absolute;
-  }\
-  .SocialIcons a {
-    text-decoration:none;
-    font-size:0px;
-  }
+      footer {
+     	padding:60px;
+       font-family: 'Raleway', sans-serif;
+       text-align: right;
+       background-color:#0f0f0f;
+   word-spacing:30px;
+        width:100%;
+      float: none !important;
+      list-style:none;
+      text-decoration:none;
+     }
+     .FooterInfo a {
+     	position:relative;
+     	text-decoration:none;
+       color: white;
+       font-family: 'Raleway', sans-serif;
+       font-size:20px;
+       padding:20px;
+       right:80px;
+
+     }
+     .FooterInfo a:hover {
+     	 border-style: solid;
+     border-color: whited;
+       border-width:  1.5px;
+       background-color:black;
+       color:white;
+       transition-duration: 0.5s;
+       opacity: 1;
+     }
+     .SocialIcons {
+       text-align:left;
+       width:auto;
+       text-decoration:none;
+       position:absolute;
+     }
+     .SocialIcons a {
+       text-decoration:none;
+       font-size:0px;
+     }
   .Facebook {
-    padding:0px;
+
     text-decoration:none;
     border-radius: 40%;
     width:40px;
@@ -213,7 +218,7 @@ position: relative;;
     opacity:0.7;
   }
   .Twitter {
-    padding:0px;
+
     text-decoration:none;
     border-radius: 40%;
     width:40px;
@@ -222,7 +227,7 @@ position: relative;;
       opacity:0.7;
   }
   .Instagram {
-    padding:0px;
+
     text-decoration:none;
     border-radius: 40%;
     width:40px;
@@ -231,7 +236,7 @@ position: relative;;
       opacity:0.7;
   }
   .Linkedin {
-    padding:0px;
+
     text-decoration:none;
     border-radius: 40%;
     width:40px;
@@ -366,14 +371,15 @@ nav {
     }
 
     .FooterInfo a{
-      font-size:13px;
+      font-size:10px;
       padding:5px;
       position:relative;
-      top:50px;
+      top:30px;
     right:10px;
     }
     .SocialIcons {
-      left:40px;
+      left:10px;
+
     }
     .Headerplanet {
       text-align:middle;
@@ -391,14 +397,15 @@ nav {
   }
   @media screen and (max-width:380px) {
     footer {
-      height:200px;
+      height:300px;
     }
     .FooterInfo a{
       font-size:11px;
-      padding:5px;
+      padding:10px;
       position:relative;
       top:50px;
-    right:30px;
+    left:70px;
+    display:inline-block;
     }
     .SocialIcons {
       width:auto;
