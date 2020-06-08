@@ -87,12 +87,15 @@
 
    <footer>
      <div class="SocialIcons">
+
        <a href="https://twitter.com/theecomap">
      <img class="Twitter" src="Twitter.jpg">
    </a>
+
    <a href="https://www.facebook.com/eco.map.9250">
      <img class="Facebook" src="Facebook.jpg">
    </a>
+
    <a href="https://www.instagram.com/ecomap3/">
      <img class="Instagram" src="Instagram.jpg">
    </a>
@@ -100,10 +103,12 @@
      <img class="Linkedin" src="Linkedin.jpg">
    </a>
    </div>
- <br>
+<br>
+ <div class="FooterInfo">
      <a href="Credits.html">CREDITS</a>
      <a href="PrivacyPolicy.html">PRIVACY-POLICY</a>
      <a href="Terms-Conditions.html">TERMS-CONDITIONS</a>
+   </div>
    </footer>
 
  </body>
@@ -282,77 +287,83 @@ position: relative;;
     color:#212e52;
    font-size:40px;
   }
-  footer {
-   padding:60px ;
-   font-family: 'Raleway', sans-serif;
-   text-align: right;
-   background-color:#0f0f0f;
-   Word-spacing: 30px;
-    width:auto;
-  float: none !important;
-  list-style:none;
- }
- footer a {
-   position:relative;
-   text-decoration:none;
-   color: white;
-   font-family: 'Raleway', sans-serif;
-   font-size:20px;
-   padding:20px;
-   right:80px;
-   display:inline;
- }
- footer a:hover {
-    border-style: solid;
- border-color: whited;
-   border-width:  1.5px;
-   background-color:black;
-   color:white;
-   transition-duration: 0.5s;
-   opacity: 1;
- }
- .SocialIcons {
-   text-align:left;
-   width:auto;
-   text-decoration:none;
-   position:absolute;
- }
- .Facebook {
-   padding:0px;
-   text-decoration:none;
-   border-radius: 40%;
-   width:40px;
- }
- .Facebook:hover {
-   opacity:0.7;
- }
- .Twitter {
-   padding:0px;
-   text-decoration:none;
-   border-radius: 40%;
-   width:40px;
- }
- .Twitter:hover {
-     opacity:0.7;
- }
- .Instagram {
-   padding:0px;
-   text-decoration:none;
-   border-radius: 40%;
-   width:40px;
- }
- .Instagram:hover {
-     opacity:0.7;
- }
- .Linkedin {
-   padding:0px;
-   text-decoration:none;
-   border-radius: 40%;
-   width:40px;
- }
- .Linkedin:hover {
-     opacity:0.7;
- }
+
+     footer {
+    	padding:60px ;
+      font-family: 'Raleway', sans-serif;
+      text-align: right;
+      background-color:#0f0f0f;
+      Word-spacing: 30px;
+       width:auto;
+     float: none !important;
+     list-style:none;
+     text-decoration:none;
+    }
+    .FooterInfo a {
+    	position:relative;
+    	text-decoration:none;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      font-size:20px;
+      padding:20px;
+      right:80px;
+
+    }
+    .FooterInfo a:hover {
+    	 border-style: solid;
+    border-color: whited;
+      border-width:  1.5px;
+      background-color:black;
+      color:white;
+      transition-duration: 0.5s;
+      opacity: 1;
+    }
+    .SocialIcons {
+      text-align:left;
+      width:auto;
+      text-decoration:none;
+      position:absolute;
+    }
+    .SocialIcons a {
+      text-decoration:none;
+      font-size:0px;
+    }
+    .Facebook {
+      padding:0px;
+      text-decoration:none;
+      border-radius: 40%;
+      width:40px;
+    }
+    .Facebook:hover {
+      opacity:0.7;
+    }
+    .Twitter {
+      padding:0px;
+      text-decoration:none;
+      border-radius: 40%;
+      width:40px;
+    }
+    .Twitter:hover {
+        opacity:0.7;
+    }
+    .Instagram {
+      padding:0px;
+      text-decoration:none;
+      border-radius: 40%;
+      width:40px;
+    }
+    .Instagram:hover {
+        opacity:0.7;
+    }
+    .Linkedin {
+      padding:0px;
+      text-decoration:none;
+      border-radius: 40%;
+      width:40px;
+    }
+    .Linkedin:hover {
+        opacity:0.7;
+    }
 
  * {
  box-sizing: border-box;
@@ -420,16 +431,16 @@ color:black;
     font-size:20px;
     padding:10px;
     }
-    footer a {
-      font-size:33px;
+    .FooterInfo {
+      font-size:80px;
       padding:10px;
-    display: inline-block;
     position:relative;
-    top:30px;
-    right:50px;
+    bottom:10px;
+    right:40px;
     }
     .SocialIcons {
-      10px;
+  position:relative;
+  left:340px;
     }
   }
 @media screen and (max-width: 600px) {
@@ -445,16 +456,17 @@ color:black;
   font-size:10px;
   padding:10px;
   }
-  footer a {
-    font-size:20px;
+  .FooterInfo {
+    font-size:10px;
     padding:10px;
-  display: inline-block;
   position:relative;
-  top:30px;
-  right:110px;
+  bottom:10px;
+  left:70px;
   }
-
-
+  .SocialIcons {
+position:relative;
+left:180px;
+  }
 }
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {

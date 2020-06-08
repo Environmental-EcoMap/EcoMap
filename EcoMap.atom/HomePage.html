@@ -33,12 +33,15 @@
 
     <footer>
       <div class="SocialIcons">
+
         <a href="https://twitter.com/theecomap">
       <img class="Twitter" src="Twitter.jpg">
     </a>
+
     <a href="https://www.facebook.com/eco.map.9250">
       <img class="Facebook" src="Facebook.jpg">
     </a>
+
     <a href="https://www.instagram.com/ecomap3/">
       <img class="Instagram" src="Instagram.jpg">
     </a>
@@ -46,10 +49,12 @@
       <img class="Linkedin" src="Linkedin.jpg">
     </a>
     </div>
-  <br>
+<br>
+  <div class="FooterInfo">
       <a href="Credits.html">CREDITS</a>
       <a href="PrivacyPolicy.html">PRIVACY-POLICY</a>
       <a href="Terms-Conditions.html">TERMS-CONDITIONS</a>
+    </div>
     </footer>
 
   </body>
@@ -231,8 +236,9 @@ text-align: center;
      width:auto;
    float: none !important;
    list-style:none;
+   text-decoration:none;
   }
-  footer a {
+  .FooterInfo a {
   	position:relative;
   	text-decoration:none;
     color: white;
@@ -240,9 +246,9 @@ text-align: center;
     font-size:20px;
     padding:20px;
     right:80px;
-    display:inline;
+
   }
-  footer a:hover {
+  .FooterInfo a:hover {
   	 border-style: solid;
   border-color: whited;
     border-width:  1.5px;
@@ -256,6 +262,10 @@ text-align: center;
     width:auto;
     text-decoration:none;
     position:absolute;
+  }
+  .SocialIcons a {
+    text-decoration:none;
+    font-size:0px;
   }
   .Facebook {
     padding:0px;
@@ -301,16 +311,16 @@ text-align: center;
     font-size:20px;
     padding:10px;
     }
-    footer a {
-      font-size:33px;
+    .FooterInfo {
+      font-size:80px;
       padding:10px;
-    display: inline-block;
     position:relative;
-    top:30px;
-    right:50px;
+    bottom:10px;
+    right:40px;
     }
     .SocialIcons {
-      10px;
+position:relative;
+left:340px;
     }
   }
   /* Responsive columns - one column layout (vertical) on small screens */
@@ -320,16 +330,16 @@ text-align: center;
     font-size:20px;
     padding:10px;
     }
-    footer a {
-      font-size:20px;
+    .FooterInfo {
+      font-size:10px;
       padding:10px;
-    display: inline-block;
     position:relative;
-    top:30px;
-    right:110px;
+    bottom:10px;
+    left:70px;
     }
     .SocialIcons {
-
+position:relative;
+left:180px;
     }
   }
   /* Responsive columns - one column layout (vertical) on small screens */
@@ -339,13 +349,16 @@ text-align: center;
     padding:5px;
     display:inline-block;
     }
-    footer a {
-      font-size:20px;
-      padding:auto;
-      display: inline-block;
-      position:relative;
-      top:50px;
-      left:0.3px;
+    .FooterInfo a {
+      font-size:15px;
+      padding:10px;
+    position:relative;
+    bottom:10px;
+    right:120px;
+    }
+    .SocialIcons {
+  position:relative;
+  right:350px;
     }
   }
   /* Responsive columns - one column layout (vertical) on small screens */
@@ -361,16 +374,19 @@ text-align: center;
     padding:5px;
     display:block;
     }
-
-    footer a {
-      font-size:20px;
-      padding:auto;
-      display: inline-block;
+footer {
+  height:300px;
+}
+    .FooterInfo {
+      font-size:2px;
+      padding:5px;
       position:relative;
       top:50px;
-      left:0.3px;
+  display:inline-block;
     }
-
+    .SocialIcons {
+      left:40px;
+    }
     .Headerplanet {
       text-align:middle;
     font-size:40px;
@@ -380,5 +396,10 @@ text-align: center;
   font-size:13px;
  }
   }
-
+@media screen and (max-width:380px) {
+  .SocialIcons {
+    position:absolute;
+    left:50px;
+  }
+}
 </style>
