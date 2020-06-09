@@ -180,13 +180,14 @@ position: relative;;
       text-decoration:none;
      }
      .FooterInfo a {
-     	position:relative;
-     	text-decoration:none;
-       color: white;
-       font-family: 'Raleway', sans-serif;
-       font-size:20px;
-       padding:20px;
-       right:80px;
+       position:relative;
+       text-decoration:none;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-size:20px;
+        padding:20px;
+        right:80px;
+
 
      }
      .FooterInfo a:hover {
@@ -294,8 +295,8 @@ body {
     .FooterInfo {
       font-size:200px;
       padding:2px;
-    position:relative;
-    bottom:10px;
+    position:auto;
+    bottom:-60px;
     right:120px;
     }
     .SocialIcons {
@@ -306,15 +307,15 @@ left:340px;
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 770px) {
   nav a {
-  font-size:10px;
-  padding:10px;
+    font-size:20px;
+    padding:10px;
   }
   .FooterInfo {
     font-size:10px;
     padding:10px;
   position:relative;
   bottom:10px;
-  right:40px;
+  right:auto;
   }
   .SocialIcons {
 position:relative;
@@ -376,6 +377,7 @@ nav {
       position:relative;
       top:30px;
     right:10px;
+
     }
     .SocialIcons {
       left:10px;
@@ -396,16 +398,21 @@ nav {
  }
   }
   @media screen and (max-width:380px) {
+
+    .FooterInfo {
+      position:auto;
+      font-size:40px;
+      right:80px;
+    }
     footer {
-      height:300px;
+      height:auto;
     }
     .FooterInfo a{
-      font-size:11px;
-      padding:10px;
+      font-size:6px;
+      padding:5px;
       position:relative;
-      top:50px;
-    left:70px;
-    display:inline-block;
+      top:40px;
+left:80px;
     }
     .SocialIcons {
       width:auto;

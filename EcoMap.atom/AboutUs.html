@@ -307,7 +307,7 @@ position: relative;;
       font-size:20px;
       padding:20px;
       right:80px;
-
+      white-space:pre;
     }
     .FooterInfo a:hover {
     	 border-style: solid;
@@ -434,9 +434,9 @@ color:black;
     .FooterInfo {
       font-size:80px;
       padding:10px;
-    position:relative;
-    bottom:10px;
-    right:40px;
+      position:auto;
+      bottom:-60px;
+      right:120px;
     }
     .SocialIcons {
   position:relative;
@@ -453,8 +453,8 @@ color:black;
 
 @media screen and (max-width: 770px) {
   nav a {
-  font-size:10px;
-  padding:10px;
+    font-size:20px;
+    padding:10px;
   }
   .FooterInfo {
     font-size:10px;
@@ -520,12 +520,11 @@ height:auto;
   display:block;
   }
   .FooterInfo a{
-    font-size:10px;
-    padding:5px;
+    font-size:6px;
+    padding:9px;
     position:relative;
     top:30px;
-  right:80px;
-  display:block;
+  right:170px;
   }
   .SocialIcons {
     left:20px;
@@ -543,4 +542,26 @@ font-size:13px;
   height:300px;
 }
 }
+@media screen and (max-width:380px) {
+  footer {
+    height:auto;
+  }
+
+      .FooterInfo {
+        position:auto;
+        font-size:40px;
+        right:80px;
+      }
+  .FooterInfo a{
+    font-size:6px;
+    padding:2px;
+    position:auto;
+    top:40px;
+  right:100px;
+  }
+  .SocialIcons {
+    width:auto;
+    left:10px;
+  }
+
 </style>

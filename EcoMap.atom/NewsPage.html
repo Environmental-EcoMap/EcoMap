@@ -366,7 +366,7 @@ color:black;
   .FooterInfo {
     font-size:200px;
     padding:2px;
-  position:relative;
+  position:auto;
   bottom:10px;
   right:120px;
   }
@@ -377,15 +377,15 @@ left:340px;
 }
 @media screen and (max-width: 770px) {
   nav a {
-  font-size:10px;
+  font-size:20px;
   padding:10px;
   }
   .FooterInfo {
     font-size:10px;
     padding:10px;
-  position:relative;
+  position:auto;
   bottom:10px;
-  right:40px;
+  right:90px;
   }
   .SocialIcons {
 position:relative;
@@ -446,11 +446,12 @@ height:auto;
   box-sizing: border-box;
   }
   .FooterInfo a{
-    font-size:10px;
+    font-size:8px;
     padding:5px;
     position:relative;
-    top:50px;
-  right:0px;
+    top:30px;
+
+  right:30px;
   }
   .SocialIcons {
     left:20px;
@@ -465,5 +466,24 @@ font-size:13px;
 }
 
 }
+@media screen and (max-width:380px) {
+  .FooterInfo {
+    position:auto;
 
+    font-size:40px;
+    left:80px;
+  }
+  .FooterInfo a{
+    font-size:7px;
+    padding:5px;
+    position:relative;
+    top:40px;
+
+  right:0px;
+  }
+  .SocialIcons {
+    width:auto;
+    left:10px;
+  }
+}
 </style>
