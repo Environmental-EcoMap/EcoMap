@@ -74,6 +74,7 @@ iframe {
        height: 500px:
        margin-left: auto;   /* margin left */
        margin-right: auto; /* margin right */
+       border-style:none;
       }
 
   .bg-img {
@@ -104,39 +105,44 @@ iframe {
   }
   nav a {
   	text-decoration:none;
-    color: white;
+    color: #97c5e6;
     font-family: 'Raleway', sans-serif;
-    font-size:20px;
+    font-size:22px;
     padding:20px;
     right:50px;
+
   }
    .logo {
 	border-style: solid;
-  border-color: white;
+  border-width:5px;
+  border-color: #ebeced;
   height:100px;
   display:inline-block;
   float:left;
+  text-shadow: 2px 2px;
+
 }
   nav {
   padding:32px;
     font-family: 'Raleway', sans-serif;
     text-align: right;
     word-spacing: 10px;
-    background-color: black;
+    background-color: white;
     width:auto;
     opacity: 1;
     width:auto;
       height:160px;
   }
   nav a:hover {
- border-style: solid;
-  border-color: #171e3d;
-    border-width:  1.5px;
+
     background-color:white;
-    color:black;
+  
     transition-duration: 0.5s;
     opacity: 1;
-
+    text-shadow: 10px 10px 5px #ccc;
+      -moz-text-shadow: 10px 10px 5px #ccc;
+      -webkit-text-shadow: 10px 10px 5px #ccc;
+      -khtml-text-shadow: 10px 10px 5px #ccc;
 }
 
   .contains {
@@ -167,7 +173,7 @@ iframe {
 }
 
   .header {
-  	background-image: url("https://images.unsplash.com/photo-1526392587392-d1627b6c134a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+  background-image: linear-gradient(white, #1470b3) ;
     background-size: auto;
     background-repeat: no-repeat;
     color:white;
