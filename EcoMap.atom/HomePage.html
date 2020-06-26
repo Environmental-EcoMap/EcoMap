@@ -99,17 +99,19 @@ iframe {
   width: auto;
 }
   .active {
-    border-style: solid;
-   border-color: #23c4d9;
-     border-width:  3px;
+    border-top: 4px solid #23c4d9;
+    border-bottom: 4px solid #23c4d9;
+    padding: 10px 0;
   }
   nav a {
-  	text-decoration:none;
-    color: #23c4d9;
-    font-family: 'Raleway', sans-serif;
-    font-size:22px;
-    padding:20px;
-    right:50px;
+    transition: 0.3s ease;
+  color: #23c4d9;
+  font-size: 20px;
+  text-decoration: none;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  padding: 20px 0;
+  margin: 0 20px;
 
   }
    .logo {
@@ -127,7 +129,7 @@ iframe {
     font-family: 'Raleway', sans-serif;
     text-align: right;
     word-spacing: 10px;
-    background-color: white;
+    background: white;
     width:auto;
     opacity: 1;
     width:auto;
@@ -135,9 +137,9 @@ iframe {
   }
   nav a:hover {
 
-    border-style: solid;
-   border-color: #23c4d9;
-     border-width:  3px;
+    border-top: 4px solid #23c4d9;
+    border-bottom: 4px solid #23c4d9;
+    padding: 10px 0;
 }
 
   .contains {
@@ -255,7 +257,7 @@ word-spacing:30px;
   .FooterInfo a:hover {
     border-style: solid;
  border-color: white;
-   border-width:  1.5px;
+   border-width:  2px;
   }
   .SocialIcons {
     text-align:left;
@@ -327,8 +329,9 @@ left:340px;
   @media screen and (max-width: 770px) {
 
     nav a {
-    font-size:20px;
-    padding:10px;
+    font-size:17px;
+    padding:1px;
+    word-spacing:2px;
     }
     .FooterInfo {
       font-size:10px;
@@ -345,7 +348,6 @@ left:180px;
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 600px) {
     .header {
-      background-image: url("https://images.unsplash.com/photo-1526392587392-d1627b6c134a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
       color:white;
       padding:50px;
       width:auto;
@@ -359,13 +361,13 @@ left:180px;
    background-repeat: no-repeat;
    background-size: cover;
   text-align: center;
-
     }
     nav a {
     font-size:20px;
     padding:5px;
     display:inline-block;
     }
+
     .FooterInfo a {
       font-size:15px;
       padding:10px;
@@ -387,17 +389,28 @@ left:180px;
       height:auto;
     }
     nav a {
-    font-size:30px;
+    font-size:20px;
     padding:5px;
     display:block;
-    }
 
+    }
+.active {
+  border-top: none;
+  border-bottom: none;
+  padding: 10px 0;
+  color: #3adbf0;
+}
+nav a:hover {
+  border-top: none;
+  border-bottom: none;
+}
     .FooterInfo a{
       font-size:10px;
-      padding:5px;
+      padding:2px;
       position:relative;
       top:30px;
-    right:85px;
+    right:95px;
+    word-spacing:none;
     }
     .SocialIcons {
       left:20px;
