@@ -11,7 +11,7 @@
     </head>
 
 
-      <body style="overflow-x: hidden;">
+      <body>
 
          <nav>
         <img class = "logo" src="https://avatars0.githubusercontent.com/u/65419811?s=200&v=4">
@@ -28,7 +28,7 @@
 </div>
 
 <div class="map">
-  <iframe  class="responsive-iframe" height="100%" width="100%" src="https://maphub.net/embed/95330?legend=1&panel=1" scrolling="auto" frameborder="1"></iframe>
+  <iframe  class="responsive-iframe" height="100%" width="100%" src="https://maphub.net/embed/95330?legend=1&panel=1" scrolling="auto" frameborder="10"></iframe>
 </div>
 </section>
 
@@ -64,11 +64,15 @@
 </html>
 
 <style>
-html,body {
-  width:100%;
-    overflow-x:hidden;
-    margin:0;
-    padding:0;
+body {
+  margin-bottom:20px;
+  margin-top:20px;
+  margin-left:50px;
+  margin-right:50px;
+  background-image: url('https://images.unsplash.com/photo-1533336480081-5e9807b88b36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80');
+  background-size: 4000px;
+  overflow-x:hidden;
+  box-shadow: 2px 2px 24px #1d7882;
 }
 iframe {
        width: 500px; /* It should not be 100% */
@@ -183,7 +187,6 @@ font-family: 'Red Hat Display', sans-serif;
 font-family: 'Red Hat Display', sans-serif;
     position: relative;
     text-transform: uppercase;
-opacity: 0.9;
 background-attachment: fixed;
  background-position: center;
  background-repeat: no-repeat;
@@ -242,9 +245,9 @@ text-align: center;
     font-family: 'Playfair Display', serif;
 font-family: 'Red Hat Display', sans-serif;
     text-align: right;
-    background-image: linear-gradient(#1ae8cd,#00aeff);
+    background-color:#23c4d9;
 word-spacing:30px;
-     width:100%;
+     width:auto;
    float: none !important;
    list-style:none;
    text-decoration:none;
@@ -257,7 +260,7 @@ word-spacing:30px;
   font-family: 'Red Hat Display', sans-serif;
     font-size:20px;
     padding:20px;
-    right:80px;
+    right:120px;
 
   }
   .FooterInfo a:hover {
@@ -362,6 +365,15 @@ word-spacing:30px;
 position:relative;
 left:340px;
     }
+    body {
+      margin-bottom:0px;
+      margin-top:0px;
+      margin-left:0px;
+      margin-right:0px;
+    }
+    footer {
+      width:100%;
+    }
   }
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 770px) {
@@ -370,6 +382,9 @@ left:340px;
     font-size:17px;
     padding:1px;
     word-spacing:2px;
+    }
+    footer {
+      width:100%;
     }
     .FooterInfo {
       font-size:10px;
@@ -381,6 +396,12 @@ left:340px;
     .SocialIcons {
 position:relative;
 left:180px;
+    }
+    body {
+      margin-bottom:0px;
+      margin-top:0px;
+      margin-left:0px;
+      margin-right:0px;
     }
   }
   /* Responsive columns - one column layout (vertical) on small screens */
@@ -418,6 +439,12 @@ left:180px;
   position:relative;
   right:350px;
     }
+    body {
+      margin-bottom:0px;
+      margin-top:0px;
+      margin-left:0px;
+      margin-right:0px;
+    }
   }
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 415px) {
@@ -447,8 +474,11 @@ nav a:hover {
       padding:2px;
       position:relative;
       top:30px;
-    right:95px;
-    word-spacing:none;
+    right:80px;
+    word-spacing:6px;
+  }
+  footer {
+    width:100%;
   }
     .SocialIcons {
       left:20px;
@@ -464,17 +494,23 @@ nav a:hover {
  .map {
    height:300px;
  }
+ body {
+   margin-bottom:0px;
+   margin-top:0px;
+   margin-left:0px;
+   margin-right:0px;
+ }
   }
 @media screen and (max-width:380px) {
   footer {
-    height:auto;
+    width:100%;
   }
   .FooterInfo a{
     font-size:8px;
     padding:5px;
     position:relative;
     top:40px;
-  right:60px;
+  right:20px;
   }
   .SocialIcons {
     width:auto;
@@ -482,6 +518,12 @@ nav a:hover {
   }
   .map {
     height:300px;
+  }
+  body {
+    margin-bottom:0px;
+    margin-top:0px;
+    margin-left:0px;
+    margin-right:0px;
   }
 }
 </style>
