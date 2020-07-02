@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Red+Hat+Display&display=swap" rel="stylesheet">
     </head>
 
   <body style="overflow-x: hidden;">
@@ -99,9 +99,9 @@
 </div>
 <br>
 <div class="FooterInfo">
-  <a href="Credits.html">CREDITS</a>
-  <a href="PrivacyPolicy.html">PRIVACY-POLICY</a>
-  <a href="Terms-Conditions.html">TERMS-CONDITIONS</a>
+  <a href="Credits.html"><b>CREDITS</b></a>
+  <a href="PrivacyPolicy.html"><b>PRIVACY-POLICY</b></a>
+  <a href="Terms-Conditions.html"><b>TERMS-CONDITIONS</b></a>
 </div>
 </footer>
   </body>
@@ -114,56 +114,56 @@ html,body {
     margin:0;
     padding:0;
 }
+
   .active {
-  	 border-style: solid;
-  border-color: white;
-    border-width:  1.5px;
+    border-top: 4px solid #198ae6;
+    border-bottom: 4px solid #198ae6;
+    padding: 10px 0;
   }
   nav a {
-   text-decoration:none;
-    color: #20f7e2;
-    font-family: 'Raleway', sans-serif;
-    font-size:22px;
-    padding:20px;
-    right:50px;
+    transition: 0.3s ease;
+  color:#198ae6;
+  font-size: 22px;
+  text-decoration: none;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  padding: 20px 0;
+  margin: 0 20px;
 
   }
   nav {
   padding:32px;
-    font-family: 'Raleway', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Red Hat Display', sans-serif;
     text-align: right;
     word-spacing: 10px;
-    background-color: white;
+    background: white;
     width:auto;
     opacity: 1;
     width:auto;
       height:160px;
   }
-  .logo {
-  border-style: solid;
-  border-color: white;
-  height:100px;
-  display:inline-block;
-  float:left;
-  }
   nav a:hover {
 
-   background-color:white;
-
-   transition-duration: 0.5s;
-   opacity: 1;
-   text-shadow: 10px 10px 5px #ccc;
-     -moz-text-shadow: 10px 10px 5px #ccc;
-     -webkit-text-shadow: 10px 10px 5px #ccc;
-     -khtml-text-shadow: 10px 10px 5px #ccc;
+    border-top: 4px solid #198ae6;
+    border-bottom: 4px solid #198ae6;
+    padding: 10px 0;
   }
+    .logo {
+    border-style: solid;
+    border-color: white;
+    height:100px;
+    display:inline-block;
+    float:left;
+    }
   header {
   	background-image: url("https://images.unsplash.com/photo-1565879422384-053cc91c8b8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
     background-repeat: no-repeat;
     color:white;
     padding:50px;
     height:620px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display', serif;
+  font-family: 'Red Hat Display', sans-serif;
     position: relative;
     text-transform: uppercase;
 opacity: 0.9;
@@ -215,7 +215,8 @@ position: relative;;
   .section1 {
   	padding: 2px;
     height:auto;
-   font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display', serif;
+  font-family: 'Red Hat Display', sans-serif;
     width:100%;
     background-color:#263885;
   }
@@ -237,7 +238,8 @@ position: relative;;
   .section2 {
   	padding: 10px;
     height:auto;
-   font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display', serif;
+  font-family: 'Red Hat Display', sans-serif;
     width:100%;
     background-color: #112045;
   }
@@ -249,88 +251,87 @@ position: relative;;
     font-size:40px;
    }
 
-      footer {
-     	padding:60px;
-       font-family: 'Raleway', sans-serif;
-       text-align: right;
-       background-image: linear-gradient(#00ff95,#00aeff);
-   word-spacing:30px;
-        width:100%;
-      float: none !important;
-      list-style:none;
-      text-decoration:none;
-     }
-     .FooterInfo a {
-     	position:relative;
-     	text-decoration:none;
-       color: white;
-       font-family: 'Raleway', sans-serif;
-       font-size:20px;
-       padding:20px;
-       right:80px;
+   footer {
+    padding:60px;
+    font-family: 'Playfair Display', serif;
+font-family: 'Red Hat Display', sans-serif;
+    text-align: right;
+    background-image: linear-gradient(#1ae8cd,#00aeff);
+word-spacing:30px;
+     width:100%;
+   float: none !important;
+   list-style:none;
+   text-decoration:none;
+  }
+  .FooterInfo a {
+    position:relative;
+    text-decoration:none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+  font-family: 'Red Hat Display', sans-serif;
+    font-size:20px;
+    padding:20px;
+    right:80px;
 
-     }
-     .FooterInfo a:hover {
-     	 border-style: solid;
-     border-color: white;
-       border-width:  1.5px;
-       background-color:white;
-       color:#20f7e2;
-       transition-duration: 0.5s;
-       opacity: 1;
-     }
-     .SocialIcons {
-       text-align:left;
-       width:auto;
-       text-decoration:none;
-       position:absolute;
-     }
-     .SocialIcons a {
-       text-decoration:none;
-       font-size:0px;
-     }
-     .Facebook {
-       padding:0px;
-       text-decoration:none;
-       border-radius: 40%;
-       width:40px;
-     }
-     .Facebook:hover {
-       opacity:0.7;
-     }
-     .Twitter {
-       padding:0px;
-       text-decoration:none;
-       border-radius: 40%;
-       width:40px;
-     }
-     .Twitter:hover {
-         opacity:0.7;
-     }
-     .Instagram {
-       padding:0px;
-       text-decoration:none;
-       border-radius: 40%;
-       width:40px;
-     }
-     .Instagram:hover {
-         opacity:0.7;
-     }
-     .Linkedin {
-       padding:0px;
-       text-decoration:none;
-       border-radius: 40%;
-       width:40px;
-     }
-     .Linkedin:hover {
-         opacity:0.7;
-     }
+  }
+  .FooterInfo a:hover {
+    border-style: solid;
+ border-color: white;
+   border-width:  2px;
+  }
+  .SocialIcons {
+    text-align:left;
+    width:auto;
+    text-decoration:none;
+    position:absolute;
+  }
+  .SocialIcons a {
+    text-decoration:none;
+    font-size:0px;
+  }
+  .Facebook {
+    padding:0px;
+    text-decoration:none;
+    border-radius: 40%;
+    width:40px;
+  }
+  .Facebook:hover {
+    opacity:0.7;
+  }
+  .Twitter {
+    padding:0px;
+    text-decoration:none;
+    border-radius: 40%;
+    width:40px;
+  }
+  .Twitter:hover {
+      opacity:0.7;
+  }
+  .Instagram {
+    padding:0px;
+    text-decoration:none;
+    border-radius: 40%;
+    width:40px;
+  }
+  .Instagram:hover {
+      opacity:0.7;
+  }
+  .Linkedin {
+    padding:0px;
+    text-decoration:none;
+    border-radius: 40%;
+    width:40px;
+  }
+  .Linkedin:hover {
+      opacity:0.7;
+  }
   * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Playfair Display', serif;
+font-family: 'Red Hat Display', sans-serif;
 }
 /* Float four columns side by side */
 .column {
@@ -354,7 +355,8 @@ body {
   padding: 40px;
   text-align: center;
   background-color: #e6e6e6;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Playfair Display', serif;
+font-family: 'Red Hat Display', sans-serif;
 color:black;
   justify-content: center;
 }
@@ -402,7 +404,8 @@ left:180px;
     color:white;
     padding:50px;
     height:620px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display', serif;
+  font-family: 'Red Hat Display', sans-serif;
     position: relative;
     text-transform: uppercase;
 opacity: 0.9;

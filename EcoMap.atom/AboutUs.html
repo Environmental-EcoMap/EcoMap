@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="HandheldFriendly" content="true">
    <link rel="stylesheet" href="style.css">
-   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Red+Hat+Display&display=swap" rel="stylesheet">
    </head>
 
  <body style="overflow-x: hidden;">
@@ -121,49 +121,47 @@ html,body {
     margin:0;
     padding:0;
 }
- .active {
-  border-style: solid;
- border-color: white;
-   border-width:  1.5px;
- }
- nav a {
-  text-decoration:none;
-   color: #20f7e2;
-   font-family: 'Raleway', sans-serif;
-   font-size:22px;
-   padding:20px;
-   right:50px;
+.active {
+  border-top: 4px solid #22ad1f;
+  border-bottom: 4px solid #22ad1f;
+  padding: 10px 0;
+}
+nav a {
+  transition: 0.3s ease;
+color:#22ad1f;
+font-size: 22px;
+text-decoration: none;
+border-top: 4px solid white;
+border-bottom: 4px solid white;
+padding: 20px 0;
+margin: 0 20px;
 
- }
- nav {
- padding:32px;
-   font-family: 'Raleway', sans-serif;
-   text-align: right;
-   word-spacing: 10px;
-   background-color: white;
-   width:auto;
-   opacity: 1;
-   width:auto;
-     height:160px;
- }
- .logo {
-border-style: solid;
- border-color: white;
- height:100px;
- display:inline-block;
- float:left;
+}
+nav {
+padding:32px;
+font-family: 'Playfair Display', serif;
+font-family: 'Red Hat Display', sans-serif;
+  text-align: right;
+  word-spacing: 10px;
+  background: white;
+  width:auto;
+  opacity: 1;
+  width:auto;
+    height:160px;
 }
 nav a:hover {
 
-  background-color:white;
-
-  transition-duration: 0.5s;
-  opacity: 1;
-  text-shadow: 10px 10px 5px #ccc;
-    -moz-text-shadow: 10px 10px 5px #ccc;
-    -webkit-text-shadow: 10px 10px 5px #ccc;
-    -khtml-text-shadow: 10px 10px 5px #ccc;
+  border-top: 4px solid #22ad1f;
+  border-bottom: 4px solid #22ad1f;
+  padding: 10px 0;
 }
+  .logo {
+  border-style: solid;
+  border-color: white;
+  height:100px;
+  display:inline-block;
+  float:left;
+  }
  header {
   background-image: url("https://wallpapershome.com/images/wallpapers/trees-3840x2160-5k-4k-wallpaper-8k-sunlight-leaves-forest-branches-5348.jpg");
   background-size: auto;
@@ -172,7 +170,8 @@ nav a:hover {
    padding:50px;
    width:100%;
    height:620px;
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Playfair Display', serif;
+ font-family: 'Red Hat Display', sans-serif;
    position: relative;
    text-transform: uppercase;
 opacity: 0.9;
@@ -213,7 +212,8 @@ text-align: center;
  .sectionheader{
   padding: 10px;
    height:auto;
-  font-family: 'Raleway', sans-serif;
+   font-family: 'Playfair Display', serif;
+ font-family: 'Red Hat Display', sans-serif;
    width:100%;
    background-color: #1a4f28;
  }
@@ -227,28 +227,32 @@ position: relative;;
  .section1 {
   padding: 5px;
    height:auto;
-  font-family: 'Raleway', sans-serif;
+   font-family: 'Playfair Display', serif;
+ font-family: 'Red Hat Display', sans-serif;
    width:100%;
    background-color:#03823c;
  }
  .section2 {
   padding: 5px;
    height:auto;
-  font-family: 'Raleway', sans-serif;
+   font-family: 'Playfair Display', serif;
+ font-family: 'Red Hat Display', sans-serif;
    width:100%;
    background-color:#1a4f28;
  }
  .section2 {
   padding: 5px;
    height:auto;
-  font-family: 'Raleway', sans-serif;
+   font-family: 'Playfair Display', serif;
+ font-family: 'Red Hat Display', sans-serif;
    width:100%;
    background-color:#1a4f28;
  }
  .section3 {
   padding: 5px;
    height:auto;
-  font-family: 'Raleway', sans-serif;
+   font-family: 'Playfair Display', serif;
+ font-family: 'Red Hat Display', sans-serif;
    width:100%;
    background-color:#1a4f28;
  }
@@ -294,9 +298,10 @@ position: relative;;
 
      footer {
     	padding:60px ;
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Playfair Display', serif;
+    font-family: 'Red Hat Display', sans-serif;
       text-align: right;
-      background-image: linear-gradient(#00ff95,#00aeff);
+      background-image: linear-gradient(#26cf23,#22ad1f);
       Word-spacing: 30px;
        width:auto;
      float: none !important;
@@ -307,20 +312,18 @@ position: relative;;
     	position:relative;
     	text-decoration:none;
       color: white;
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Playfair Display', serif;
+    font-family: 'Red Hat Display', sans-serif;
+
       font-size:20px;
       padding:20px;
       right:80px;
       white-space:pre;
     }
     .FooterInfo a:hover {
-    	 border-style: solid;
-    border-color: white;
-      border-width:  1.5px;
-      background-color:white;
-      color:#20f7e2;
-      transition-duration: 0.5s;
-      opacity: 1;
+      border-style: solid;
+   border-color: white;
+     border-width:  2px;
     }
     .SocialIcons {
       text-align:left;
@@ -374,7 +377,8 @@ position: relative;;
 }
 
 body {
- font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Playfair Display', serif;
+font-family: 'Red Hat Display', sans-serif;
 }
 .Card1-img {
  display: block;
@@ -423,7 +427,8 @@ body {
  padding: 40px;
  text-align: center;
  background-color:#2e9447;
- font-family: 'Raleway', sans-serif;
+ font-family: 'Playfair Display', serif;
+font-family: 'Red Hat Display', sans-serif;
 color:black;
  justify-content: center;
 }
@@ -436,11 +441,11 @@ color:black;
     padding:10px;
     }
     .FooterInfo {
-      font-size:80px;
-      padding:10px;
-      position:auto;
-      bottom:-60px;
-      right:120px;
+      font-size:200px;
+      padding:2px;
+    position:relative;
+    bottom:30px;
+    right:120px;
     }
     .SocialIcons {
   position:relative;
@@ -480,7 +485,8 @@ left:180px;
     padding:50px;
     width:100%;
     height:620px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display', serif;
+  font-family: 'Red Hat Display', sans-serif;
     position: relative;
     text-transform: uppercase;
  opacity: 0.9;
