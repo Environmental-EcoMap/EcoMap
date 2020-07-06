@@ -27,9 +27,14 @@
       <p class="Mission-text"><b>Believe it or not, our Earth is suffering. Global warming, deforestation, droughts--these phenomena are merely part of what is continuing to devastate living beings throughout the world. Standing at the root of these issues are humans! To take a step forward toward a chance at redemption, we have created this platform to raise awareness about both the environmental problems occurring and the organizations already working towards a solution. You can also take action by utilizing EcoMap to aide the organizations helping the environment in areas you feel passionate about and become an active collaborator by submitting a problem that you think deserves recognition on our map below. Through your help, our broken world can be mended!</b></p>
     </section>
 
+<section class="section1.5" style="height:600px;width:auto;padding:80px;background-image: url('https://www.itl.cat/pngfile/big/6-60826_windows-10-build-10147-wallpaper-windows-10-scuba.png');background-size: 1950px 750px;;">
+  <div style="background-color:rgba(49, 56, 56, 0.5);padding:20px;width:800px;height:400px;position:relative;center:300px;margin:auto;border-radius: 50px;">
+      <h2 class="Contact">Reach Out to Us!</h2>
+      <p class="ReachOutParagraph">Use the contact form below to submit a problem that you want in the map, provide feedback on our platform, or reach out to us! We will get back to you as soon as possible!</p>
+    </div>
+</section>
+
     <section class="section2">
-      <h2 style="background-color:#008a99;"class="Contact">Reach Out to Us!</h2>
-      <p class=""
   <div class="container">
   <form action="contactform.php">
 
@@ -40,22 +45,31 @@
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
     <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
+    <select id="country" name="country" style=" bottom: 100%;">
       <option value="Usa">USA</option>
-      <option value="Russia">Russia</option>
-      <option value="India">India</option>
-      <option value="England">England</option>
-      <option value="Germany">Germany</option>
-      <option value="Mexico">Mexico</option>
-      <option value="France">France</option>
-      <option value="UAE">United Arab Emirates</option>
-      <option value="South Africa">South Africa</option>
-      <option value="France">France</option>
+      <option value="australia">Australia</option>
+      <option value="Peru">Brazil</option>
+      <option value="canada">Canada</option>
       <option value="China">China</option>
-      <option value="Japan">Japan</option>
       <option value="France">France</option>
+      <option value="Germany">Germany</option>
+     <option value="India">India</option>
+     <option value="Iran">Iran</option>
+     <option value="Italy">Italy</option>
+     <option value="Japan">Japan</option>
+     <option value="Mexico">Mexico</option>
+     <option value="New Zealand">New Zealand</option>
+     <option value="Peru">Peru</option>
+     <option value="Russia">Russia</option>
+    <option value="Saudi Arabia">Saudi Arabia</option>
+     <option value="South Africa">South Africa</option>
+     <option value="Spain">Spain</option>
+     <option value="Switzerland">Switzerland</option>
+    <option value="Uganda">Uganda</option>
+    <option value="UAE">United Arab Emirates</option>
+    <option value="UK">United Kingdom</option>
+
+
     </select>
 
     <label for="subject">Subject</label>
@@ -65,7 +79,6 @@
 
   </form>
 </div>
-  </section>
 
     <footer>
       <div class="SocialIcons">
@@ -96,6 +109,7 @@
 </html>
 
 <style>
+
 body {
   margin-bottom:20px;
   margin-top:20px;
@@ -191,23 +205,43 @@ text-align: center;
    }
    .Mission-text {
    	text-align: center;
+    font-family: 'Playfair Display', serif;
+  font-family: 'Red Hat Display', sans-serif;
      padding:50px;
      font-size:30px;
      opacity: 0.8;
      color:white;
    }
-   .Contact{
-     display:block;
-     text-align: center;
-     text-decoration: overline;
-      color: white;
-      font-size:40px;
-   }
-  .section2 {
+.section2 {
+
+  }
+  .section1.5 {
     height:auto;
     font-family: 'Playfair Display', serif;
   font-family: 'Red Hat Display', sans-serif;
     width:auto;
+
+  }
+  .ReachOutParagraph {
+opacity:0.6px;
+    font-family: 'Playfair Display', serif;
+  font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    color:white;
+    text-align:center;
+    padding:50px;
+    font-size:20px;
+    color:white;
+  }
+  .Contact{
+    display:block;
+    text-align: center;
+    text-decoration: overline;
+     color: white;
+     font-size:30px;
+     margin:0;
+     margin-bottom: 0;
+    padding: 30px;
   }
   /* Style inputs with type="text", select elements and textareas */
   input[type=text], select, textarea {
@@ -239,10 +273,10 @@ text-align: center;
 
   /* Add a background color and some padding around the form */
   .container {
-    border-radius: 5px;
     background-color: #008a99;
     padding: 20px;
     color:white;
+    margin: 0;
   }
    footer {
   	padding:60px;
