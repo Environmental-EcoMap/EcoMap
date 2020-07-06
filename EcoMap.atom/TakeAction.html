@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Red+Hat+Display&display=swap" rel="stylesheet">
     </head>
 
-  <body style="overflow-x: hidden;padding:25px;background-image: url('https://www.pixel4k.com/wp-content/uploads/2019/11/dolphin-underwater_1574938193.jpg');">
+  <body style="overflow-x: hidden;">
     <nav>
        <img class = "logo" src="https://avatars0.githubusercontent.com/u/65419811?s=200&v=4">
        <a href="HomePage.html"><b>HOME</b></a>
@@ -23,10 +23,39 @@
     </header>
 
     <section class="section1">
-      <h1 class="Mission">Our Mission</h1>
-      <p class="Mission-text"><b>Believe it or not, our Earth is suffering. Global warming, deforestation, droughts--these phenomena are merely part of what is continuing to devastate living beings throughout the world. Standing at the root of these problems are humans! To take a step forward toward a chance at redemption, we have created this platform to raise awareness about both the environmental issues occurring and the organizations already working towards a solution. You can also take action by aiding these organizations and help mend our broken world.</b></p>
+      <h1 class="Action">The Problem</h1>
+      <p class="Mission-text"><b>Believe it or not, our Earth is suffering. Global warming, deforestation, droughts--these phenomena are merely part of what is continuing to devastate living beings throughout the world. Standing at the root of these issues are humans! To take a step forward toward a chance at redemption, we have created this platform to raise awareness about both the environmental problems occurring and the organizations already working towards a solution. You can also take action by utilizing EcoMap to aide the organizations helping the environment in areas you feel passionate about and become an active collaborator by submitting a problem that you think deserves recognition on our map below. Through your help, our broken world can be mended!</b></p>
     </section>
 
+    <section class="section2">
+  <div class="container">
+<<<<<<< HEAD
+  <form action="action_page.php">
+=======
+  <form action="contactform.php">
+>>>>>>> 87d575acea5b8cc61347cfab466bd875df77d6c7
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+  </section>
 
     <footer>
       <div class="SocialIcons">
@@ -57,11 +86,15 @@
 </html>
 
 <style>
-html,body {
-  width:100%;
-  overflow-x:auto;
-    margin:0;
-    padding:0;
+body {
+  margin-bottom:20px;
+  margin-top:20px;
+  margin-left:50px;
+  margin-right:50px;
+  background-image: url('https://www.pixel4k.com/wp-content/uploads/2019/11/dolphin-underwater_1574938193.jpg');
+  background-size: 4000px;
+  overflow-x:hidden;
+  box-shadow: 2px 2px 24px #1d7882;
 }
 .active {
   border-top: 4px solid #008a99;
@@ -71,7 +104,7 @@ html,body {
 nav a {
   transition: 0.3s ease;
 color: #008a99;
-font-size: 22px;
+font-size: 20px;
 text-decoration: none;
 border-top: 4px solid white;
 border-bottom: 4px solid white;
@@ -89,7 +122,7 @@ font-family: 'Red Hat Display', sans-serif;
   width:auto;
   opacity: 1;
   width:auto;
-    height:160px;
+    height:200px;
 }
 nav a:hover {
 
@@ -102,6 +135,7 @@ nav a:hover {
   border-color: white;
   height:100px;
   display:inline-block;
+    border-width:5px;
   float:left;
   }
 
@@ -138,7 +172,7 @@ text-align: center;
     width:100%;
     background-image: linear-gradient(#112045, #008a99);
   }
-   .Mission {
+   .Action {
    	display:block;
    	text-align: center;
     text-decoration: overline;
@@ -147,33 +181,62 @@ text-align: center;
    }
    .Mission-text {
    	text-align: center;
-     padding:12px;
+     padding:50px;
      font-size:30px;
      opacity: 0.8;
      color:white;
    }
   .section2 {
-  	padding: 10px;
     height:auto;
     font-family: 'Playfair Display', serif;
   font-family: 'Red Hat Display', sans-serif;
-    width:100%;
-    background-color: #e6e6e6;
+    width:auto;
   }
-  .Blog2 {
-   	display:block;
-   	text-align: center;
-    text-decoration: overline;
-     color:#212e52;
-    font-size:40px;
-   }
+  /* Style inputs with type="text", select elements and textareas */
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #112045; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    color:white;
+  }
 
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+<<<<<<< HEAD
+    background-color: #008a99;
+=======
+    background-color: #035a63;
+>>>>>>> 87d575acea5b8cc61347cfab466bd875df77d6c7
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #008a99;
+    padding: 20px;
+    color:white;
+  }
    footer {
   	padding:60px;
     font-family: 'Playfair Display', serif;
 font-family: 'Red Hat Display', sans-serif;
     text-align: right;
-    background-image: linear-gradient(#0a4fa8,#00827a);
+    background-color:#124575;
 word-spacing:30px;
      width:100%;
    float: none !important;
