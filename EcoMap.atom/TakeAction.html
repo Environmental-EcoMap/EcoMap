@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -36,13 +37,13 @@
 
     <section class="section2">
   <div class="container">
-  <form action="contactform.php">
+  <form class="FormContact" action="contactform.php" method=post>
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your Email...">
 
     <label for="country">Country</label>
     <select id="country" name="country" style=" bottom: 100%;">
@@ -50,6 +51,7 @@
       <option value="australia">Australia</option>
       <option value="Peru">Brazil</option>
       <option value="canada">Canada</option>
+<<<<<<< HEAD
       <option value="China">China</option>
       <option value="France">France</option>
       <option value="Germany">Germany</option>
@@ -68,14 +70,29 @@
     <option value="Uganda">Uganda</option>
     <option value="UAE">United Arab Emirates</option>
     <option value="UK">United Kingdom</option>
+    <option value="Other">Other</option>
 
-
+=======
+      <option value="Usa">USA</option>
+      <option value="Russia">Russia</option>
+      <option value="India">India</option>
+      <option value="England">England</option>
+      <option value="Germany">Germany</option>
+      <option value="Mexico">Mexico</option>
+      <option value="France">France</option>
+      <option value="UAE">United Arab Emirates</option>
+      <option value="South Africa">South Africa</option>
+      <option value="France">France</option>
+      <option value="China">China</option>
+      <option value="Japan">Japan</option>
+      <option value="France">France</option>
+>>>>>>> 6655c26edaebc0b1b5711d476cea0d60a821c924
     </select>
 
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
+    <button class="submitbutton" type="submit" name="submit">SUBMIT</button>
 
   </form>
 </div>
@@ -266,11 +283,16 @@ opacity:0.6px;
     cursor: pointer;
   }
 
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #45a049;
+  .submitbutton:hover {
+    background-color: #118f80;
   }
-
+.submitbutton {
+  text-decoration: none;
+  background-color: #035a63;
+  color:white;
+  border: none;
+  padding:15px;
+}
   /* Add a background color and some padding around the form */
   .container {
     background-color: #008a99;
