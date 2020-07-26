@@ -11,7 +11,7 @@
     $mailheader = "From: $email \r\n";
     $msg =  " $subject \n"."$country \n\n ". " $mailheader ";
     if(mail($recipient, $name, $msg)){
-      echo "Thank You! Our team will be with you shortly!" . " -" . "<a href='HomePage.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>";
+      echo "Thank You! Our team will be with you shortly!" . " -" . "<a href='HomePage.html' style='text-decoration:none;color:#ff0099;text-align:center;'> Return Home</a>";
     }
     else {
       echo ("Error!");
