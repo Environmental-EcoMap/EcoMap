@@ -7,7 +7,7 @@
     $country = $_POST['country'];
     $phone = $_POST['phone'];
     $group = $_POST['group'];
-    $find = $_POST['$find'];
+    $find = $_POST['find'];
 
     $recipient = "Ecomap3@gmail.com";
     $formcontent=" From: $name \n";
