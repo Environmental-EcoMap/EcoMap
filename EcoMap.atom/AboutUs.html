@@ -188,12 +188,12 @@ text-align: center;
    text-decoration: overline;
     color: white;
     font-size:35px;
+    padding: 0px;
   }
   .OurProject-text {
   text-align: center;
   margin-left:100px;
   margin-right:100px;
-    padding:12px;
     font-size:25px;
     opacity: 0.8;
     color:white;
@@ -229,13 +229,15 @@ position: relative;;
 
  }
  .section1 {
-  padding: 40px;
+   padding: 5px;
    height:auto;
    font-family: 'Playfair Display', serif;
  font-family: 'Red Hat Display', sans-serif;
    width:100%;
-   background-image: linear-gradient(#50cc1f, #075e22);
- }
+background-image: linear-gradient(#50cc1f, #075e22);
+}
+
+
  .section2 {
   padding: 5px;
    height:auto;
@@ -301,7 +303,7 @@ position: relative;;
       text-align: right;
       background-image: linear-gradient(#26cf23,#22ad1f);
       Word-spacing: 30px;
-       width:auto;
+       width:100%;
      float: none !important;
      list-style:none;
      text-decoration:none;
@@ -316,7 +318,7 @@ position: relative;;
       font-size:20px;
       padding:20px;
       right:80px;
-      white-space:pre;
+
     }
     .FooterInfo a:hover {
       border-style: solid;
@@ -430,7 +432,44 @@ font-family: 'Red Hat Display', sans-serif;
 color:black;
  justify-content: center;
 }
+@media screen and (min-width: 1020px) (max-width: 1050px;) {
+  footer {
+    height: 350px;
+  }
+  .SocialIcons {
+    position:relative;
+    left:140px;
+  }
+  .Linkedin {
+    width: 80px;
+    position:relative;
+    right: 70px;
+  }
+  .Facebook {
+    width: 80px;
+    position:relative;
+    right: 70px;
+  }
+  .Twitter {
+    width: 80px;
+    position:relative;
+    right: 70px;
+  }
+  .Instagram {
+    width: 80px;
+    position:relative;
+    right: 70px;
+  }
+  .FooterInfo {
+    font-size:200px;
+    padding:2px;
+  position:auto;
+  bottom:10px;
+  right:120px;
+  }
 
+
+}
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 1025px) {
 
@@ -438,16 +477,20 @@ color:black;
     font-size:20px;
     padding:10px;
     }
-    .FooterInfo {
-      font-size:200px;
-      padding:2px;
-    position:relative;
-    bottom:30px;
-    right:120px;
+    footer {
+      width:100%;
     }
+    .FooterInfo {
+    font-size:200px;
+    padding:2px;
+  position:auto;
+  bottom:10px;
+  right:120px;
+  }
     .SocialIcons {
   position:relative;
   left:340px;
+
     }
     body {
       margin-bottom:0px;
@@ -455,6 +498,14 @@ color:black;
       margin-left:0px;
       margin-right:0px;
     }
+    .OurProject-text {
+  text-align: center;
+  margin-left:50px;
+  margin-right:50px;
+    font-size:25px;
+    opacity: 0.8;
+    color:white;
+  }
   }
 @media screen and (max-width: 600px) {
   .column {
@@ -469,12 +520,12 @@ color:black;
     font-size:20px;
     padding:10px;
   }
-  .FooterInfo {
+ .FooterInfo {
     font-size:10px;
     padding:10px;
-  position:relative;
+  position:auto;
   bottom:10px;
-  left:70px;
+  right:90px;
   }
   .SocialIcons {
 position:relative;
@@ -546,15 +597,15 @@ height:auto;
   display:block;
   }
   .FooterInfo a{
-    font-size:12px;
-    padding:7px;
+    font-size:10px;
+    padding:5px;
     position:relative;
     top:30px;
-  right:220px;
+  right:70px;
   }
-  footer {
-    width:150%;
-  }
+footer {
+  width:100%;
+}
   .SocialIcons {
     left:20px;
   }
@@ -579,20 +630,18 @@ body {
 }
 @media screen and (max-width:380px) {
   footer {
-    height:auto;
+    width:100%;
   }
-
-      .FooterInfo {
-        position:auto;
-        font-size:40px;
-        right:80px;
-      }
   .FooterInfo a{
-    font-size:6px;
-    padding:2px;
-    position:auto;
+    font-size:9px;
+    padding:5px;
+    position:relative;
     top:40px;
-  right:100px;
+    right:60px;
+  }
+  .SocialIcons {
+    width:auto;
+    left:10px;
   }
   .SocialIcons {
     width:auto;
